@@ -3134,6 +3134,14 @@ table th[class*="span"],
           border-radius: 6px;
 }
 
+.well-tweet {
+    margin:0px;
+    padding: 15px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
 .well-small {
   padding: 9px;
   -webkit-border-radius: 3px;
