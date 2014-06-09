@@ -12,28 +12,29 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+$(document).ready(function () {
     var $tweet_input = $('#write_twit');
     var $tweet_count_label = $('#write_twit_count');
-    $tweet_input.focusin(function(){
+    $tweet_input.focusin(function () {
         $(this).attr("rows", "3")
     });
-    $tweet_input.keyup(function() {
+    $tweet_input.keyup(function () {
         var $rest = 160 - ($(this).val()).toString().length;
-        if($rest <= 10){
-            $tweet_count_label.css('color','red')
+        if ($rest <= 10) {
+            $tweet_count_label.css('color', 'red')
         }
-        else{
-            $tweet_count_label.css('color',$tweet_input.css('color'));
+        else {
+            $tweet_count_label.css('color', $tweet_input.css('color'));
         }
         $tweet_count_label.html($rest);
     });
-    $tweet_input.focusout(function(){
+    $tweet_input.focusout(function () {
         $rest = 160 - ($(this).val()).toString().length
-        if($rest === 160){
+        if ($rest === 160) {
             $(this).attr("rows", "1");
             $tweet_count_label.html("");
         }
