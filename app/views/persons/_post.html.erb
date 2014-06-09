@@ -2,5 +2,5 @@
   <div id="tweet_header">
     <strong><%= full_name post.user %></strong> <%= format_nic post.user %> · <%= how_old_is_post post %>
   </div>
-  <%= post.body %>
+  <%= simple_format post.body %>
 </div>

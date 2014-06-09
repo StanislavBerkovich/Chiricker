@@ -31,6 +31,13 @@ $(document).ready(function(){
         }
         $tweet_count_label.html($rest);
     });
+    $tweet_input.focusout(function(){
+        $rest = 160 - ($(this).val()).toString().length
+        if($rest === 160){
+            $(this).attr("rows", "1");
+            $tweet_count_label.html("");
+        }
+    });
 });
 
 
