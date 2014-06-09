@@ -4,30 +4,32 @@
   </div>
   <div class="span8">
     <h1>
-      <%=full_name current_user%>
+      <%= full_name @user %>
     </h1>
 
     <h2>
-      <%=format_nic current_user%>
+      <%= format_nic @user %>
     </h2>
   </div>
 </div>
 
-<%= form_for @post, url:{action: "add_post"}, method: :post do |p| %>
-    <div class="field">
-      <%= p.text_area :body, rows:"1", class:'input-xxlarge', id:"write_twit", placeholder:"Написать чирик...", maxlength:"160" %>
-      <div class="actions">
-        <%= p.submit 'Чирикнуть', class:'btn' %>
-        <span id="write_twit_count"></span>
-      </div>
-    </div>
+<% if current_user.id == @user.id %>
+    <%= form_for @post, url: {action: "add_post"}, method: :post do |p| %>
+        <div class="field">
+          <%= p.text_area :body, rows: "1", class: 'input-xxlarge', id: "write_twit", placeholder: "Написать чирик...", maxlength: "160" %>
+          <div class="actions">
+            <%= p.submit 'Чирикнуть', class: 'btn' %>
+            <span id="write_twit_count"></span>
+          </div>
+        </div>
+    <% end %>
 <% end %>
 
 <div class="container">
   <h3>Posts</h3>
-  <% if  current_user.posts.empty? %>
+  <% if  @user.posts.empty? %>
       <p>No posts =(</p>
   <% else %>
-      <%= render partial: "post", collection: current_user.posts.reverse %>
+      <%= render partial: "post", collection: @user.posts.reverse %>
   <% end %>
 </div>

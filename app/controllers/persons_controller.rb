@@ -1,6 +1,7 @@
 class PersonsController < ApplicationController
   before_filter :authenticate_user!
   def profile
+    @user = (params.has_key?(:user_id) ? User.find(params[:user_id]) : current_user)
     @post = Post.new
   end
 

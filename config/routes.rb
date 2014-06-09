@@ -2,12 +2,10 @@ Rails.application.routes.draw do
   resources :posts
 
   get 'home/index'
-
   get 'persons/profile'
   get 'persons/feed'
   get 'persons/read_writers'
   post 'persons/add_post'
-
 
 
   devise_for :users, :controllers => {:registrations => "registrations"}
