@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="span2">
-    <%= image_tag 'image.jpg' %>
+    <%= image_tag @user.avatar.url%>
   </div>
   <div class="span8">
     <h1>
@@ -16,9 +16,9 @@
 <% if current_user.id == @user.id %>
     <%= form_for @post, url: {action: "add_post"}, method: :post do |p| %>
         <div class="field">
-          <%= p.text_area :body, rows: "1", class: 'input-xxlarge', id: "write_twit", placeholder: "Написать чирик...", maxlength: "160" %>
+          <%= p.text_area :body, rows: "1", class: 'input-xxlarge', id: "write_twit", placeholder: "Написать твит...", maxlength: "160" %>
           <div class="actions">
-            <%= p.submit 'Чирикнуть', class: 'btn' %>
+            <%= p.submit 'Твитнуть', class: 'btn' %>
             <span id="write_twit_count"></span>
           </div>
         </div>
@@ -26,9 +26,9 @@
 <% end %>
 
 <div class="container">
-  <h3>Posts</h3>
+  <h3>Твиты</h3>
   <% if  @user.posts.empty? %>
-      <p>No posts =(</p>
+      <p>У вас нету твиттов</p>
   <% else %>
       <%= render partial: "post", collection: @user.posts.reverse %>
   <% end %>

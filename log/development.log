@@ -15973,3 +15973,3469 @@ ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
   Rendered /home/stas/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
   Rendered /home/stas/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
   Rendered /home/stas/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.8ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:25:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  Rendered persons/_post.html.erb (16.6ms)
+  Rendered persons/profile.html.erb within layouts/application (92.2ms)
+Completed 200 OK in 371ms (Views: 311.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:43 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:44 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:44 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:44 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:25:44 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:25:44 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xbDv1TJyke6h6/bkNGGWXs+Y6BPe3gRjsl5iuu9DX8o="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:05 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:06 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:06 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:06 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CzntZUaiCYepg9iui/415aIoZQpAX5gAiCeNBW2GTPY=", "user"=>{"email"=>"max231194@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'max231194@mail.ru'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-06-11 20:26:08.319876"], ["last_sign_in_at", "2014-06-09 16:37:38.305205"], ["sign_in_count", 7], ["updated_at", "2014-06-11 20:26:08.321703"]]
+  [1m[36m (164.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 274ms (ActiveRecord: 166.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered persons/_post.html.erb (2.3ms)
+  Rendered persons/profile.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:26:08 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAvatarColumnsToUsers (20140611205146)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "avatar_file_name" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "avatar_content_type" varchar(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "avatar_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "avatar_updated_at" datetime
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140611205146"]]
+  [1m[35m (149.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:55:56 +0300
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x000000020ff148>):
+  app/models/user.rb:8:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.5ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:56:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  Rendered persons/_post.html.erb (32.7ms)
+  Rendered persons/profile.html.erb within layouts/application (103.8ms)
+Completed 200 OK in 348ms (Views: 285.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:56:38 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.5ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered persons/_post.html.erb (4.3ms)
+  Rendered persons/profile.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:56:43 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.9ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  Rendered persons/_post.html.erb (2.1ms)
+  Rendered persons/profile.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 39ms (Views: 32.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:58:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.6ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered persons/_post.html.erb (1.8ms)
+  Rendered persons/profile.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:58:27 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  Rendered persons/_post.html.erb (2.0ms)
+  Rendered persons/profile.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:28 +0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"duRL7FlDDnjW6Eb96aXDCstJAWkprYXauRW/pfkqeO0="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 45ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:58:33 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-06-11 23:58:46 +0300
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (53.4ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pjuUC46plc+ABcFRO5H0skcs4c6naoLA6jN82OfpF8c=", "user"=>{"email"=>"max231194@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Макс", "surname"=>"Баранок", "nic"=>"maxfan", "city"=>"Витебск", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x0000000523a140 @tempfile=#<Tempfile:/tmp/RackMultipart20140611-3377-yhru6p>, @original_filename="hgLxQNRgPJ0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"hgLxQNRgPJ0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Зарегистрироваться"}
+Unpermitted parameters: avatar
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'max231194@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("city", "created_at", "email", "encrypted_password", "name", "nic", "surname", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["city", "Витебск"], ["created_at", "2014-06-11 20:59:43.414570"], ["email", "max231194@gmail.com"], ["encrypted_password", "$2a$10$wdS5u7GJvNMwcvbX0uNEruNEsqdaPA.YLpUURVdWWglT9OzoP6tM2"], ["name", "Макс"], ["nic", "maxfan"], ["surname", "Баранок"], ["updated_at", "2014-06-11 20:59:43.414570"]]
+  [1m[36m (200.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 299ms (ActiveRecord: 201.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-11 23:59:44 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pjuUC46plc+ABcFRO5H0skcs4c6naoLA6jN82OfpF8c=", "user"=>{"email"=>"max231194@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'max231194@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 4  [["current_sign_in_at", "2014-06-11 21:00:07.311029"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-06-11 21:00:07.311029"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-06-11 21:00:07.312782"]]
+  [1m[36m (250.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 364ms (ActiveRecord: 251.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 4]]
+  Rendered persons/profile.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:07 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:08 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:00:08 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-12 00:00:08 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.5ms)
+
+
+Started GET "/persons/feed" for 127.0.0.1 at 2014-06-12 00:00:20 +0300
+Processing by PersonsController#feed as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered persons/_post.html.erb (30.7ms)
+  Rendered persons/feed.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/persons/read_writers" for 127.0.0.1 at 2014-06-12 00:00:21 +0300
+Processing by PersonsController#read_writers as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered persons/_user.html.erb (2.1ms)
+  Rendered persons/read_writers.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 00:00:23 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:00:23 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 4]]
+  Rendered persons/profile.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-12 00:00:23 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:01:57 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 4]]
+  Rendered persons/profile.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 63ms (Views: 37.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:57 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:57 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:57 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:57 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:57 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 4]]
+  Rendered persons/profile.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:58 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-12 00:01:59 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ReOzsChwbGEWAfxKq81i1CsENG1lPKewQ+cRZGP39Cg="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:02:02 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-06-12 00:02:06 +0300
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-12 00:03:07 +0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HowWrO7Vn3RA4RBFKmwACiRttNEEk0jc4cORZYwofvY=", "user"=>{"email"=>"wenfjwenfjwen@nsjn.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Алекс", "surname"=>"Дель Пьеро", "nic"=>"delpiero7", "city"=>"Турин", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00000005f3cfa0 @tempfile=#<Tempfile:/tmp/RackMultipart20140612-3377-v1jku9>, @original_filename="hgLxQNRgPJ0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"hgLxQNRgPJ0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Зарегистрироваться"}
+Command :: file -b --mime '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-j46nly.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os.jpg[0]'
+Command :: convert '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os.jpg[0]' -auto-orient -resize "300x300>" '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os20140612-3377-ltrsv6'
+Command :: file -b --mime '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os20140612-3377-ltrsv6'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os.jpg[0]'
+Command :: convert '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os.jpg[0]' -auto-orient -resize "100x100>" '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os20140612-3377-17u65yd'
+Command :: file -b --mime '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-171j5os20140612-3377-17u65yd'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'wenfjwenfjwen@nsjn.ru' LIMIT 1
+Command :: file -b --mime '/tmp/ae9029d080522e582a23d947a283df3520140612-3377-1p4ybsr.jpg'
+Binary data inserted for `string` type on column `avatar_content_type`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "city", "created_at", "email", "encrypted_password", "name", "nic", "surname", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["avatar_content_type", "image/jpeg"], ["avatar_file_name", "hgLxQNRgPJ0.jpg"], ["avatar_file_size", 29749], ["avatar_updated_at", "2014-06-11 21:03:07.876600"], ["city", "Турин"], ["created_at", "2014-06-11 21:03:08.673626"], ["email", "wenfjwenfjwen@nsjn.ru"], ["encrypted_password", "$2a$10$QOgDlEfsd/IsrY.E2JJPgu2Vmx.eDqGctYVE4Ustx/YW/mr1hu5ES"], ["name", "Алекс"], ["nic", "delpiero7"], ["surname", "Дель Пьеро"], ["updated_at", "2014-06-11 21:03:08.673626"]]
+  [1m[35m (198.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1141ms (ActiveRecord: 199.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-12 00:03:08 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:09 +0300
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-12 00:03:43 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HowWrO7Vn3RA4RBFKmwACiRttNEEk0jc4cORZYwofvY=", "user"=>{"email"=>"wenfjwenfjwen@nsjn.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'wenfjwenfjwen@nsjn.ru'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 5[0m  [["current_sign_in_at", "2014-06-11 21:03:43.912147"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-06-11 21:03:43.912147"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-06-11 21:03:43.913086"]]
+  [1m[35m (188.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 292ms (ActiveRecord: 189.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 5]]
+  Rendered persons/profile.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+
+Started GET "/images/image.jpg" for 127.0.0.1 at 2014-06-12 00:03:44 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/image.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.8ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 5]]
+  Rendered persons/profile.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:04:44 +0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yQR/HIpINUR8y7pJmRXFqv3mxZy3Y8mGCUNiLU+R8cU="}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:03 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-12 00:09:16 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nUAXtzbKqDQE50bIm/MfLYHaQykEOHJshkgsEodLZak=", "user"=>{"email"=>"max231194@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'max231194@mail.ru'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["remember_created_at", "2014-06-11 21:09:16.527797"], ["updated_at", "2014-06-11 21:09:16.528390"]]
+  [1m[35m (176.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-06-11 21:09:16.708536"], ["last_sign_in_at", "2014-06-11 20:26:08.319876"], ["sign_in_count", 8], ["updated_at", "2014-06-11 21:09:16.711385"]]
+  [1m[36m (180.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 475ms (ActiveRecord: 358.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 00:09:16 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:09:16 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.1ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered persons/_post.html.erb (2.3ms)
+  Rendered persons/profile.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2014-06-12 00:09:17 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  Rendered persons/_post.html.erb (1.6ms)
+  Rendered persons/profile.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:55 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2014-06-12 00:39:56 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 01:01:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  Rendered persons/_post.html.erb (18.3ms)
+  Rendered persons/profile.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 350ms (Views: 286.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered persons/_post.html.erb (2.0ms)
+  Rendered persons/profile.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 33ms (Views: 26.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:35 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+
+Started GET "/images/medium/missing.png" for 127.0.0.1 at 2014-06-12 01:01:36 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.1ms)
+  Rendered /home/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-12 01:02:47 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+A34JJbp6Y7RimQtLBaP6/WP/4Q+8lLqQ88vxoN6ZjE="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["remember_created_at", nil], ["updated_at", "2014-06-11 22:02:47.393678"]]
+  [1m[36m (463.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 482ms (ActiveRecord: 464.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 01:02:47 +0300
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-12 01:02:47 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:02:48 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-06-12 01:02:51 +0300
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-12 01:04:04 +0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/uu74N6Xv1JjW6ZLbdB1B8M05DldBq179Ggoi1C2A0=", "user"=>{"email"=>"italy@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Страна", "surname"=>"Италия", "nic"=>"italy", "city"=>"Rome", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00000001928410 @tempfile=#<Tempfile:/tmp/RackMultipart20140612-11265-1r4qatq>, @original_filename="images.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"images.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Зарегистрироваться"}
+Command :: file -b --mime '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-1igzh5u.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq.jpg[0]'
+Command :: convert '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq.jpg[0]' -auto-orient -resize "300x300>" '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq20140612-11265-za8tx6'
+Command :: file -b --mime '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq20140612-11265-za8tx6'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq.jpg[0]'
+Command :: convert '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq.jpg[0]' -auto-orient -resize "100x100>" '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq20140612-11265-1l7jtcs'
+Command :: file -b --mime '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-cyfvbq20140612-11265-1l7jtcs'
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'italy@mail.ru' LIMIT 1[0m
+Command :: file -b --mime '/tmp/59b514174bffe4ae402b3d63aad79fe020140612-11265-1h1il8c.jpg'
+Binary data inserted for `string` type on column `avatar_content_type`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "city", "created_at", "email", "encrypted_password", "name", "nic", "surname", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["avatar_content_type", "image/jpeg"], ["avatar_file_name", "images.jpg"], ["avatar_file_size", 8270], ["avatar_updated_at", "2014-06-11 22:04:04.871741"], ["city", "Rome"], ["created_at", "2014-06-11 22:04:05.200256"], ["email", "italy@mail.ru"], ["encrypted_password", "$2a$10$XKO0dGPDN5m9AagqdwC/R.z6HVnkfAZcVdztIXck.YcYNAmdkH.RS"], ["name", "Страна"], ["nic", "italy"], ["surname", "Италия"], ["updated_at", "2014-06-11 22:04:05.200256"]]
+  [1m[36m (285.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 762ms (ActiveRecord: 287.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:05 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-12 01:04:18 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/uu74N6Xv1JjW6ZLbdB1B8M05DldBq179Ggoi1C2A0=", "user"=>{"email"=>"italy@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'italy@mail.ru'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 6  [["remember_created_at", "2014-06-11 22:04:18.991646"], ["updated_at", "2014-06-11 22:04:18.992356"]]
+  [1m[36m (218.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 6[0m  [["current_sign_in_at", "2014-06-11 22:04:19.214761"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-06-11 22:04:19.214761"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-06-11 22:04:19.218901"]]
+  [1m[35m (215.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 552ms (ActiveRecord: 435.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  Rendered persons/profile.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:04:19 +0300
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+Processing by PersonsController#profile as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  Rendered persons/profile.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 01:05:52 +0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-12 01:06:06 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OBytK+b7r6kMzCJOQHDMstVb/2HRaAJGI0FCn92aeyg="}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 6  [["remember_created_at", nil], ["updated_at", "2014-06-11 22:06:06.693922"]]
+  [1m[36m (401.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 421ms (ActiveRecord: 402.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 01:06:07 +0300
+  [1m[36mUser Load (4.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-12 01:07:20 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7CwV8UA9/arKqCEVwOJKbKfPPeH1ed2fVOU80mt2yrc=", "user"=>{"email"=>"wenfjwenfjwen@nsjn.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'wenfjwenfjwen@nsjn.ru'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 5  [["current_sign_in_at", "2014-06-11 22:07:20.474248"], ["sign_in_count", 2], ["updated_at", "2014-06-11 22:07:20.475159"]]
+  [1m[36m (919.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1022ms (ActiveRecord: 920.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/persons/profile
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+Processing by PersonsController#profile as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts"  WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 5]]
+  Rendered persons/profile.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 01:07:21 +0300
