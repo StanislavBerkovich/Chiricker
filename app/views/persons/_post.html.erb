@@ -1,6 +1,17 @@
 <div class="well well-tweet">
-  <div id="tweet_header">
-    <strong><%= full_name post.user %></strong> <%= format_nic post.user %> · <%= how_old_is_post post %>
+  <div class="container-fluid">
+    <div class="span1">
+      <% if post.user.avatar_file_name != nil%>
+        <%= image_tag post.user.avatar.url, class:"img-rounded", size:"50"%>
+      <% else %>
+        <%= image_tag 'no_avatar.png', class:"img-rounded", size:"50"%>
+      <% end %>
+    </div>
+    <div class="span9">
+      <div id="tweet_header">
+        <strong><%= full_name post.user %></strong> <%= format_nic post.user %> · <%= how_old_is_post post %>
+      </div>
+      <%= simple_format post.body %>
+    </div>
   </div>
-  <%= simple_format post.body %>
 </div>
