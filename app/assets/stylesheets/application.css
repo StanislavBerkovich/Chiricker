@@ -12,12 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require twitter-bootstrap-static/bootstrap
  */
 
-#write_twit_count{
+#write_twit_count {
     margin-left: 45px;
 }
 
-#tweet_header{
+#tweet_header {
     margin-bottom: 10px;
 }
