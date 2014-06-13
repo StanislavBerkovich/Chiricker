@@ -1,10 +1,6 @@
 <div class="container-fluid">
   <div class="span2">
-    <% if @user.avatar_file_name != nil%>
-        <%= image_tag @user.avatar.url, class:"img-rounded", size:"140"%>
-    <% else %>
-        <%= image_tag 'no_avatar.png', class:"img-rounded", size:"140"%>
-    <% end %>
+    <%= image_tag @user.avatar.url, class: "img-rounded", size: "140" %>
   </div>
   <div class="span8">
     <h1>

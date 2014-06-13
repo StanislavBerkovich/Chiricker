@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
+  resource :persons do
+    resources :posts
+  end
 
   get 'home/index'
   get 'persons/profile'
