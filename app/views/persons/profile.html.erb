@@ -1,15 +1,17 @@
-<div class="container-fluid">
-  <div class="span2">
-    <%= image_tag @user.avatar.url, class:"img-rounded", size:"140"%>
-  </div>
-  <div class="span8">
-    <h1>
-      <%= full_name @user %>
-    </h1>
+<div class="hero-unit">
+  <div class="container-fluid">
+    <div class="span2">
+      <%= image_tag @user.avatar.url, class: "img-rounded", size: :medium %>
+    </div>
+    <div class="span8">
+      <h1>
+        <%= full_name @user %>
+      </h1>
 
-    <h2>
-      <%= format_nic @user %>
-    </h2>
+      <h2>
+        <%= format_nic @user %>
+      </h2>
+    </div>
   </div>
 </div>
 
@@ -28,8 +30,8 @@
 <div class="container">
   <h3>Твиты</h3>
   <% if  @user.posts.empty? %>
-      <p>У вас нету твитов</p>
-  <% else %>
+      <p><%= format_nic @user %> не написал ни одного твита.</p>
+<% else %>
       <%= render partial: "post", collection: @user.posts.reverse %>
   <% end %>
 </div>
