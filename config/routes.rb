@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  resources :posts
-
   get 'home/index'
   get 'persons/profile'
   get 'persons/feed'
   get 'persons/read_writers'
   post 'persons/add_post'
+
+  resources :persons do
+    resources :posts
+  end
 
 
   devise_for :users, :controllers => {:registrations => "registrations"}
