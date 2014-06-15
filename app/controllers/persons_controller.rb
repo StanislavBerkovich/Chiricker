@@ -13,6 +13,15 @@ class PersonsController < ApplicationController
     @users = User.all
   end
 
+  def edit
+  end
+
+  def update
+    @user = User.find(current_user.id)
+    @user.update(user_params)
+    redirect_to root_path
+  end
+
   def add_post
     @post = Post.new
     @post.body = params[:post][:body]
@@ -20,4 +29,9 @@ class PersonsController < ApplicationController
     current_user.posts << @post
     redirect_to root_path
   end
+
+  private
+    def user_params
+      params.require(:user).permit(:name, :surname, :nic, :city, :email, :avatar)
+    end
 end

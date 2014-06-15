@@ -36,3 +36,12 @@ a:hover {
     color: black;
     text-decoration: none;
 }
+
+i{
+    color:#515151;
+    margin-left: 20px;
+}
+
+#choose_file{
+    margin-bottom: 20px;
+}

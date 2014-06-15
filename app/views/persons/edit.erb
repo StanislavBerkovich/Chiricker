@@ -1,0 +1,33 @@
+<%= form_for current_user, url: {action: "update"}, method: :put do |f| %>
+
+    <div><%= f.label 'Электронная почта' %>
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+
+    <div>
+      <%= f.label 'Имя' %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div>
+      <%= f.label 'Фамилия' %>
+      <%= f.text_field :surname %>
+    </div>
+
+    <div>
+      <%= f.label 'Ник' %>
+      <%= f.text_field :nic %>
+    </div>
+
+    <div>
+      <%= f.label 'Город' %>
+      <%= f.text_field :city %>
+    </div>
+
+    <div id='choose_file'>
+      <%= f.label 'Изображение профиля' %>
+      <%= f.file_field :avatar, accept: 'image/png,image/gif,image/jpeg'%>
+    </div>
+
+    <div><%= f.submit "Обновить профиль", class:'btn'%></div>
+<% end %>
