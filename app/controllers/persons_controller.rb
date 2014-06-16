@@ -10,7 +10,7 @@ class PersonsController < ApplicationController
   end
 
   def read_writers
-    @users = User.all
+    @users = User.all - [current_user]
   end
 
   def edit
@@ -27,7 +27,9 @@ class PersonsController < ApplicationController
     @post.body = params[:post][:body]
     @post.save
     current_user.posts << @post
-    redirect_to root_path
+    respond_to do |format|
+      format.js
+    end
   end
 
   private

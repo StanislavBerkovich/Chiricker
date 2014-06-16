@@ -16,7 +16,7 @@
 </div>
 
 <% if current_user.id == @user.id %>
-    <%= form_for @post, url: {action: "add_post"}, method: :post do |p| %>
+    <%= form_for @post, url: {action: "add_post"}, remote: true, method: :post do |p| %>
         <div class="field">
           <%= p.text_area :body, rows: "1", class: 'input-xlarge', id: "write_twit", placeholder: "Написать твит...", maxlength: "160" %>
           <div class="actions">
@@ -32,6 +32,8 @@
   <% if  @user.posts.empty? %>
       <p><%= format_nic @user %> не написал ни одного твита.</p>
 <% else %>
-      <%= render partial: "post", collection: @user.posts.reverse %>
+      <div class="posts">
+        <%= render partial: "post", collection: @user.posts.reverse %>
+      </div>
   <% end %>
 </div>
