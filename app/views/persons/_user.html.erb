@@ -6,7 +6,7 @@
 
 
     <div class="span9">
-      <h3><%= link_to format_nic(user), persons_profile_path({user_id: user.id}) %></h3>
+      <h3><%= link_to format_nic(user), persons_profile_path({user_id: user.id}) %><span class="pull-right"><%= button_to "Не читать", persons_delete_writer_path({user_id: user.id}), remote: true, method: :post, class:'btn btn-danger', id:'delete_writer_button'%></span></h3>
       <%= full_name user %>
     </div>
 

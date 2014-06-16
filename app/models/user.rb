@@ -1,4 +1,9 @@
 class User < ActiveRecord::Base
+  has_and_belongs_to_many :writers, class_name: "User",
+    foreign_key: "reader_id",
+    association_foreign_key: "writer_id"
+
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

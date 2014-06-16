@@ -10,7 +10,31 @@ class PersonsController < ApplicationController
   end
 
   def read_writers
-    @users = User.all - [current_user]
+    @users = current_user.writers
+  end
+
+  def add_writer
+    if params.has_key? :user_id
+      @user = User.find(params[:user_id])
+      unless current_user.writers.include? @user
+        current_user.writers << @user
+      end
+    end
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def delete_writer
+    if params.has_key? :user_id
+      @user = User.find(params[:user_id])
+      if current_user.writers.include? @user
+        current_user.writers -= [@user]
+      end
+    end
+    respond_to do |format|
+      format.js
+    end
   end
 
   def edit
