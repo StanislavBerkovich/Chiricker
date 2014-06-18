@@ -56,6 +56,14 @@ class PersonsController < ApplicationController
     end
   end
 
+  def delete_post
+    @post = Post.find(params[:post_id])
+    @post.destroy
+    respond_to do |format|
+      format.js
+    end
+  end
+
   private
     def user_params
       params.require(:user).permit(:name, :surname, :nic, :city, :email, :avatar)

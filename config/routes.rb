@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post 'persons/add_post'
   post 'persons/add_writer'
   post 'persons/delete_writer'
+  delete 'persons/delete_post'
 
 
   devise_for :users, :controllers => {:registrations => "registrations"}

@@ -16,10 +16,16 @@
 </div>
 
 <% if current_user.id != @user.id %>
-    <% unless current_user.writers.include? @user %>
-        <%= button_to "Читать", persons_add_writer_path({user_id: @user.id}), remote: true, method: :post, class:'btn btn-primary', id:'add_writer_button'%>
+    <% if current_user.writers.include? @user %>
+        <%= button_to "Читать", persons_add_writer_path({user_id: @user.id}), remote: true, method: :post,
+                      class:'btn btn-primary', id:'add_writer_button', style: 'display: none'%>
+        <%= button_to "Не читать", persons_delete_writer_path({user_id: @user.id}), remote: true, method: :post,
+                      class:'btn btn-danger', id:'delete_writer_button'%>
     <% else %>
-        <%= button_to "Не читать", persons_delete_writer_path({user_id: @user.id}), remote: true, method: :post, class:'btn btn-danger', id:'delete_writer_button'%>
+        <%= button_to "Читать", persons_add_writer_path({user_id: @user.id}), remote: true, method: :post,
+                      class:'btn btn-primary', id:'add_writer_button'%>
+        <%= button_to "Не читать", persons_delete_writer_path({user_id: @user.id}), remote: true, method: :post,
+                      class:'btn btn-danger', id:'delete_writer_button', style: 'display: none'%>
     <% end %>
 <% end %>
 
@@ -35,7 +41,7 @@
     <% end %>
 <% end %>
 
-<div class="container">
+<div class="container-tweet">
   <h3>Твиты</h3>
   <% if  @user.posts.empty? %>
       <p><%= format_nic @user %> не написал ни одного твита.</p>
