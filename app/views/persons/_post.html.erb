@@ -1,4 +1,4 @@
-<div class="well well-tweet">
+<%= "<div id='#{post.id}'class='well well-tweet'>".html_safe %>
   <div class="container-fluid">
     <div class="span1">
         <%= image_tag post.user.avatar.url, class:"img-rounded", size: :small%>

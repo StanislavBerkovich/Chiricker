@@ -21,9 +21,11 @@
     <a class="nav pull-right" href="edit">
       <i class="fa fa-cog fa-3x"></i>
     </a>
-    <form class="navbar-search pull-right">
-      <input type="text" class="search-query" placeholder="Search">
-    </form>
+    <%= form_tag persons_search_path, :method => 'get', class: "navbar-search pull-right" do %>
+        <p>
+          <%= text_field_tag :search, params[:search], class: "search-query" %>
+        </p>
+    <% end %>
   </div>
 </div>
 <div class="container">

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'persons/profile'
   get 'persons/feed'
   get 'persons/read_writers'
+  get 'persons/search'
   post 'persons/add_post'
   post 'persons/add_writer'
   post 'persons/delete_writer'
