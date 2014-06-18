@@ -60,7 +60,7 @@ class PersonsController < ApplicationController
     @post = Post.find(params[:post_id])
     @post.destroy
     respond_to do |format|
-      format.js
+      format.js {}
     end
   end
 

@@ -42,12 +42,14 @@
 <% end %>
 
 <div class="container-tweet">
-  <h3>Твиты</h3>
-  <% if  @user.posts.empty? %>
-      <p><%= format_nic @user %> не написал ни одного твита.</p>
-<% else %>
+  <h3>
+   <% unless @user.posts.empty? %>
+    Твиты
+   <% else %>
+    <%= format_nic @user %> не написал ничего.
+    <% end %>
+  </h3>
       <div class="posts">
         <%= render partial: "post", collection: @user.posts.reverse %>
       </div>
-  <% end %>
 </div>
