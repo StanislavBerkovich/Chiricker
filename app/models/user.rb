@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   has_and_belongs_to_many :writers, class_name: "User",
-    foreign_key: "reader_id",
-    association_foreign_key: "writer_id"
+                          foreign_key: "reader_id",
+                          association_foreign_key: "writer_id"
 
 
   # Include default devise modules. Others available are:
@@ -17,10 +17,17 @@ class User < ActiveRecord::Base
   validates :name, :surname, :nic, :city, presence: true
 
   def self.search(search)
+    search_result = []
     if search
-      User.where('nic LIKE '+"'%#{search}%'")
+      search_sql = " LIKE '%#{search}%'";
+      search_result << User.where('nic'+ search_sql)
+      search_result << User.where('email' + search_sql)
+      search_result << User.where('name' + search_sql)
+      search_result << User.where('surname' + search_sql)
+      search_result.flatten!.uniq!.compact!
     else
-      User.all
+      search_result = User.all
     end
+    search_result
   end
 end

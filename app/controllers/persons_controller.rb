@@ -1,5 +1,6 @@
 class PersonsController < ApplicationController
   before_filter :authenticate_user!
+
   def profile
     @user = (params.has_key?(:user_id) ? User.find(params[:user_id]) : current_user)
     @post = Post.new
@@ -13,7 +14,7 @@ class PersonsController < ApplicationController
       @posts << writer.posts
     end
     @posts.flatten!
-    @posts.sort!{|x, y| x.updated_at <=> y.updated_at}
+    @posts.sort! { |x, y| x.updated_at <=> y.updated_at }
   end
 
   def read_writers
@@ -72,11 +73,11 @@ class PersonsController < ApplicationController
   end
 
   def search
-    @users = User.search(params[:search])
+    @users = User.search(params[:search]) - [current_user]
   end
 
   private
-    def user_params
-      params.require(:user).permit(:name, :surname, :nic, :city, :email, :avatar)
-    end
+  def user_params
+    params.require(:user).permit(:name, :surname, :nic, :city, :email, :avatar)
+  end
 end

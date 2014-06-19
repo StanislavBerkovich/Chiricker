@@ -6,15 +6,7 @@
 
 
     <div class="span9">
-      <h3><%= link_to format_nic(user), persons_profile_path({user_id: user.id}) %>
-        <% if user != current_user %>
-            <span class="pull-right">
-                <% if action_name.eql?("read_writers") %>
-                    <%= button_to "Не читать", persons_delete_writer_path({user_id: user.id}), remote: true, method: :post, class:'btn btn-danger', id:'writer_button'%>
-                <% end %>
-            </span>
-        <% end %>
-      </h3>
+      <h3><%= link_to format_nic(user), persons_profile_path({user_id: user.id}) %></h3>
       <%= full_name user %>
     </div>
 
