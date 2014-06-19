@@ -39,6 +39,14 @@ $(document).ready(function () {
             $tweet_count_label.html("");
         }
     });
+
+    $('#modal').modal({
+        keyboard: false
+    });
+
+
 });
+
+
 
 
