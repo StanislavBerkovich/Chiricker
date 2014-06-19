@@ -6,7 +6,14 @@ class PersonsController < ApplicationController
   end
 
   def feed
-    @posts = Post.all
+    @posts = Array.new
+    @writers = current_user.writers
+    @posts << current_user.posts
+    @writers.each do |writer|
+      @posts << writer.posts
+    end
+    @posts.flatten!
+    @posts.sort!{|x, y| x.updated_at <=> y.updated_at}
   end
 
   def read_writers

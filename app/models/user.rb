@@ -18,9 +18,9 @@ class User < ActiveRecord::Base
 
   def self.search(search)
     if search
-      puts find_by(:nic, :conditions => ['nic LIKE ?', "%#{search}%"])
+      User.where('nic LIKE '+"'%#{search}%'")
     else
-      find(:all)
+      User.all
     end
   end
 end
