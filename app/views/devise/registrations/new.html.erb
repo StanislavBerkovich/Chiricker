@@ -1,5 +1,10 @@
 <div class="modal" id="modal">
-  <h2>Регистрация</h2>
+  <div class="modal-header">
+    <h2>Регистрация</h2>
+  </div>
+
+  <p class="text-warning"><%= notice %></p>
+  <p class="text-error"><%= alert %></p>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
@@ -45,6 +50,7 @@
         <%= f.submit "Зарегистрироваться", class: 'btn' %>
       </div>
   <% end %>
-
-  <%= render "devise/shared/links" %>
+  <div class="modal-footer">
+    <%= render "devise/shared/links" %>
+  </div>
 </div>

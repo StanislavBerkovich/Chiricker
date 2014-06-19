@@ -40,12 +40,28 @@ $(document).ready(function () {
         }
     });
 
-    $('#modal').modal({
-        keyboard: false
+
+
+    $('#modal').ready(function(){
+
+        $('#modal').modal({
+            keyboard: false
+
+        });
+
+        $('#modal').on('hidden', function () {
+            $(modal).modal({
+                keyboard:false
+            });
+        });
+
     });
 
 
+
+
 });
+
 
 
 

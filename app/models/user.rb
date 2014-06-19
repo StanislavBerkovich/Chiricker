@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
   has_attached_file :avatar, :styles => {:medium => "300x300>", :small => "100x100>"}, :default_url => "no_avatar.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   validates :name, :surname, :nic, :city, presence: true
+  validates :email, uniqueness: true, presence:true
 
   def self.search(search)
     search_result = []
