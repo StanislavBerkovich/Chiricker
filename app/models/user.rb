@@ -24,7 +24,8 @@ class User < ActiveRecord::Base
       search_result << User.where('nic'+ search_sql)
       search_result << User.where('name' + search_sql)
       search_result << User.where('surname' + search_sql)
-      search_result.flatten!.uniq!.compact!
+      search_result.flatten!.compact!
+      search_result.uniq!
     else
       search_result = User.all
     end
