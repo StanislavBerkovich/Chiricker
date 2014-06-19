@@ -21,7 +21,6 @@ class User < ActiveRecord::Base
     if search
       search_sql = " LIKE '%#{search}%'";
       search_result << User.where('nic'+ search_sql)
-      search_result << User.where('email' + search_sql)
       search_result << User.where('name' + search_sql)
       search_result << User.where('surname' + search_sql)
       search_result.flatten!.uniq!.compact!

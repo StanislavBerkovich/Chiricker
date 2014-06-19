@@ -16,7 +16,8 @@
     </div>
     <div id="options_panel" class="pull-right">
       <% if post.user == current_user %>
-          <i class="fa fa-trash-o fa-lg"> <%= link_to 'Удалить', persons_delete_post_path({post_id: post.id}), remote: true, method: :delete %></i>
+                <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete, class: 'close' %>
+
       <% end %>
     </div>
   </div>
