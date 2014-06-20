@@ -3,4 +3,7 @@
   <data-source source="LOCAL" name="Rails Chiricker: development" uuid="91f501ed-b861-4878-ac50-75f12e607266">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails Chiricker: test" uuid="6ff29e4f-46d7-4cf8-a4a2-61f68585911e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

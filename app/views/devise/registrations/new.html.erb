@@ -2,13 +2,13 @@
   <div class="modal-header">
     <h2>Регистрация</h2>
   </div>
-
+  <div class="modal-body">
   <p class="text-warning"><%= notice %></p>
+
   <p class="text-error"><%= alert %></p>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
-
       <div><%= f.label 'Электронная почта' %>
         <%= f.email_field :email, autofocus: true %>
       </div>
@@ -20,7 +20,6 @@
       <div><%= f.label 'Повторить пароль' %>
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
-
       <div>
         <%= f.label 'Имя' %>
         <%= f.text_field :name %>
@@ -46,11 +45,12 @@
         <%= f.file_field :avatar, accept: 'image/png,image/gif,image/jpeg' %>
       </div>
 
-      <div>
-        <%= f.submit "Зарегистрироваться", class: 'btn' %>
-      </div>
-  <% end %>
+  </div>
   <div class="modal-footer">
+    <div>
+      <%= f.submit "Зарегистрироваться", class: 'btn btn-primary pull-left' %>
+    </div>
+    <% end %>
     <%= render "devise/shared/links" %>
   </div>
 </div>
