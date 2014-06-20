@@ -42,6 +42,13 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+});
+
+$(document).on('page:change',function(){
     $('#modal').ready(function(){
 
         $('#modal').modal({
@@ -50,15 +57,12 @@ $(document).ready(function () {
         });
 
         $('#modal').on('hidden', function () {
-            $(modal).modal({
+            $('#modal').modal({
                 keyboard:false
             });
         });
 
     });
-
-
-
 
 });
 

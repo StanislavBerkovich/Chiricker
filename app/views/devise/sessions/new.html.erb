@@ -2,23 +2,28 @@
   <div class="modal-header">
     <h2>Войти</h2>
   </div>
+
   <p class="text-warning"><%= notice %></p>
+
   <p class="text-error"><%= alert %></p>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div><%= f.label 'Электронная почта' %>
-        <%= f.email_field :email, autofocus: true %></div>
+      <div class="modal-body">
+        <div><%= f.label 'Электронная почта' %>
+          <%= f.email_field :email, autofocus: true %></div>
 
-      <div><%= f.label 'Пароль' %>
-        <%= f.password_field :password, autocomplete: "off" %></div>
+        <div><%= f.label 'Пароль' %>
+          <%= f.password_field :password, autocomplete: "off" %></div>
 
-      <% if devise_mapping.rememberable? -%>
-          <div><%= f.check_box :remember_me, style: "float:left; margin-right:10px" %> <%= f.label 'Запомнить меня' %></div>
-      <% end -%>
+        <% if devise_mapping.rememberable? -%>
+            <div><%= f.check_box :remember_me, style: "float:left; margin-right:10px" %> <%= f.label 'Запомнить меня' %></div>
+        <% end -%>
+      </div>
 
-      <div><%= f.submit "Войти", class: 'btn' %></div>
-  <% end %>
-  <div class="modal-footer">
-    <%= render "devise/shared/links" %>
-  </div>
+
+      <div class="modal-footer">
+        <div><%= f.submit "Войти", class: 'btn btn-primary pull-left' %></div>
+        <%= render "devise/shared/links" %>
+      </div>
+<% end %>
 </div>
 
