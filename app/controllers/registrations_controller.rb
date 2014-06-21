@@ -6,6 +6,7 @@ class RegistrationsController < Devise::RegistrationsController
   def create
     #TODO: отловить ошибки регистрации
     User.create sign_up_params
+    UserMailer.welcome_email(User.find_by_nic(sign_up_params[:nic])).deliver
     redirect_to new_user_session_path
   end
 
