@@ -1,24 +1,5 @@
-<%= "<div id='#{post.id}'class='well well-tweet'>".html_safe %>
-  <div class="container-fluid">
-    <div class="span1">
-        <%= image_tag post.user.avatar.url, class:"img-rounded", size: :small%>
-    </div>
-    <div class="span9">
-      <div id="tweet_header">
-        <strong>
-          <%= link_to full_name(post.user), persons_profile_path({user_id: post.user.id}) %>
-        </strong>
-        <%= link_to format_nic(post.user), persons_profile_path({user_id: post.user.id}) %>
-        <span class='pull-right'>
-        <%= how_old_is_post post %>
-        </span>
-      </div>
-      <%= simple_format post.body %>
-    </div>
-    <div id="options_panel" class="pull-right">
-      <% if post.user == current_user %>
-        <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete, class: 'close' %>
-      <% end %>
-    </div>
-  </div>
-</div>
+<% if post.retweeted %>
+    <%= render partial: 'post_retweet', locals: {post: post} %>
+<% else %>
+    <%= render partial: 'post_not_retweet', locals: {post: post} %>
+<% end %>
