@@ -18,7 +18,7 @@
   <div id="options_panel" class="pull-right">
     <% if post.user == current_user %>
         <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete,
-                    class: 'close' %>
+                    class: 'close', rel:"tooltip", title:"Удалить", data:{placement:"top"} %>
     <% end %>
   </div>
 </div>
