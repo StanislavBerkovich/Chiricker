@@ -46,6 +46,6 @@ Rails.application.configure do
       :domain => "gmail.com",
       authentication: 'plain',
       :user_name => "max231194@gmail.com",
-      :password => "1355BARANOKMA1355"
+      :password => ""
   }
 end
