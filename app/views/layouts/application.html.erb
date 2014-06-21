@@ -18,9 +18,8 @@
     <ul class="nav pull-right">
       <li><%= link_to 'Выйти', destroy_user_session_path, method: :delete %></li>
     </ul>
-    <a class="nav pull-right" href="edit">
-      <i class="fa fa-cog fa-3x"></i>
-    </a>
+    <%= link_to '<i class="fa fa-cog fa-3x"></i>'.html_safe, edit_persons_path, method: :get, class:"nav pull-right",
+    rel:"tooltip", title:"Настройки", data:{placement:"bottom"}%>
     <%= form_tag persons_search_path, :method => 'get', class: "navbar-search pull-right" do %>
         <p>
           <%= text_field_tag :search, params[:search], class: "search-query" %>

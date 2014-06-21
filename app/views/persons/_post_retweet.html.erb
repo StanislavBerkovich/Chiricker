@@ -27,8 +27,5 @@
   </div>
 </div>
 <div id="tweet_footer">
-  <% if post.user != current_user %>
-      <i class="fa fa-retweet fa-2x" style="color: #bababa"></i><%= link_to 'Ретвит', persons_retweet_post_path({post_id: post.id}), remote: true, method: :post, id:"retweet_link" %>
-  <% end %>
 </div>
 </div>

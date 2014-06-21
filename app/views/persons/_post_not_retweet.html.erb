@@ -17,13 +17,16 @@
   </div>
   <div id="options_panel" class="pull-right">
     <% if post.user == current_user %>
-        <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete, class: 'close' %>
+        <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete,
+                    class: 'close' %>
     <% end %>
   </div>
 </div>
 <div id="tweet_footer">
   <% if post.user != current_user %>
-      <i class="fa fa-retweet fa-2x"></i><%= link_to 'Ретвитнуть', persons_retweet_post_path({post_id: post.id}), remote: true, method: :post %>
+      <%= link_to '<i class="fa fa-retweet fa-2x" style="color:#bababa"></i>'.html_safe,
+                  persons_retweet_post_path({post_id: post.id}), remote: true, method: :post, id:"retweet_link",
+                  rel:"tooltip", title:"Ретвитнуть", data:{placement:"top"}%>
   <% end %>
 </div>
 </div>

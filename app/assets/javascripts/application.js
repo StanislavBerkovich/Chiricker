@@ -39,13 +39,7 @@ $(document).ready(function () {
             $tweet_count_label.html("");
         }
     });
-
-
-
-
-
-
-
+    $("[rel='tooltip']").tooltip();
 });
 
 $(document).on('page:change',function(){
