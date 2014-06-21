@@ -1,17 +1,19 @@
+<% @user = User.find(post.retweeter_id)%>
+
 <%= "<div id='#{post.id}'class='well well-tweet'>".html_safe %>
 <div class="container-fluid">
-  <div>
-    Ретвитнул <strong><%= full_name post.user %></strong>
+  <div id="retweet_header">
+    <i class="fa fa-share-square" style="color:green"></i>Ретвитнул(а) <strong><%= link_to full_name(post.user), persons_profile_path({user_id: post.user.id}), id:"retweet_link" %></strong>
   </div>
   <div class="span1">
-    <%= image_tag post.user.avatar.url, class:"img-rounded", size: :small%>
+    <%= image_tag @user.avatar.url, class:"img-rounded", size: :small%>
   </div>
   <div class="span9">
     <div id="tweet_header">
       <strong>
-        <%= link_to full_name(post.user), persons_profile_path({user_id: post.user.id}) %>
+        <%= link_to full_name(@user), persons_profile_path({user_id: @user.id}) %>
       </strong>
-      <%= link_to format_nic(post.user), persons_profile_path({user_id: post.user.id}) %>
+      <%= link_to format_nic(@user), persons_profile_path({user_id: @user.id}) %>
       <span class='pull-right'>
         <%= how_old_is_post post %>
         </span>
@@ -22,9 +24,11 @@
     <% if post.user == current_user %>
         <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete, class: 'close' %>
     <% end %>
-    <% if post.user != current_user %>
-        <%= link_to 'Ретвит', persons_retweet_post_path({post_id: post.id}), remote: true, method: :post %>
-    <% end %>
   </div>
+</div>
+<div id="tweet_footer">
+  <% if post.user != current_user %>
+      <i class="fa fa-retweet fa-2x" style="color: #bababa"></i><%= link_to 'Ретвит', persons_retweet_post_path({post_id: post.id}), remote: true, method: :post, id:"retweet_link" %>
+  <% end %>
 </div>
 </div>

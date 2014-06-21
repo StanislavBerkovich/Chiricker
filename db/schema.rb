@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140621153910) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "retweeted"
+    t.integer  "retweeter_id"
   end
 
   create_table "users", force: true do |t|

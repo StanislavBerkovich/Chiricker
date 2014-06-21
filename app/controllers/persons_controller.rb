@@ -74,9 +74,8 @@ class PersonsController < ApplicationController
 
   def retweet_post
     @retweet_post = Post.find(params[:post_id])
-    @retweet_writer = User.find(@retweet_post.user.id)
     @post = Post.new
-    @post.user_id = @retweet_post.user_id
+    @post.retweeter_id= @retweet_post.user_id
     @post.body = @retweet_post.body
     @post.retweeted = true
     @post.save

@@ -19,9 +19,11 @@
     <% if post.user == current_user %>
         <%= link_to "&times".html_safe, persons_delete_post_path({post_id: post.id}), remote: true, method: :delete, class: 'close' %>
     <% end %>
-    <% if post.user != current_user %>
-        <%= link_to 'Ретвит', persons_retweet_post_path({post_id: post.id}), remote: true, method: :post %>
-    <% end %>
   </div>
+</div>
+<div id="tweet_footer">
+  <% if post.user != current_user %>
+      <i class="fa fa-retweet fa-2x"></i><%= link_to 'Ретвитнуть', persons_retweet_post_path({post_id: post.id}), remote: true, method: :post %>
+  <% end %>
 </div>
 </div>

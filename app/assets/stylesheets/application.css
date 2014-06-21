@@ -40,6 +40,7 @@ a:hover {
 i{
     color:#515151;
     margin-left: 20px;
+    padding-right: 5px;
 }
 
 #choose_file{
@@ -49,4 +50,19 @@ i{
 #modal{
     padding: 1em 1em 1em 1em;
 
+}
+
+#retweet_header{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    color: #bababa;
+}
+
+#retweet_link{
+    color: #bababa;
+}
+
+#tweet_footer{
+    width: 300px;
+    margin-left: 200px;
 }
